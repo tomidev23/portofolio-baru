@@ -3,17 +3,67 @@ import { BsFiles } from "@react-icons/all-files/bs/BsFiles";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
 import { SiPython } from "@react-icons/all-files/si/SiPython";
 import { SiC } from "@react-icons/all-files/si/SiC";
-import { SiZig } from "react-icons/si";
-import { FaCrown } from "react-icons/fa6";
-import { FaGolang } from "react-icons/fa6";
-import { SiAssemblyscript } from "react-icons/si";
+import { SiZig, SiPhp, SiJavascript, SiCplusplus, SiGo, SiDart, SiHtml5 } from "react-icons/si";
+import { FaCrown, FaGolang } from "react-icons/fa6";
+import { SiAssemblyscript, SiNim } from "react-icons/si";
 import { motion } from "framer-motion";
-import { Fragment, useState } from "react";
+import { Fragment, useState, useMemo } from "react";
 import datas from "../data/ProjectData.json";
+
+// Helper function to generate icons for any technology
+function generateIcon(tech) {
+  if (tech.includes("Python")) {
+    return <SiPython />;
+  }
+  if (tech.includes("C++")) {
+    return <SiCplusplus />;
+  }
+  if (tech.includes("C#")) {
+    return <SiC />;
+  }
+  if (tech === "C") {
+    return <SiC />;
+  }
+  if (tech.includes("PHP")) {
+    return <SiPhp />;
+  }
+  if (tech.includes("JavaScript")) {
+    return <SiJavascript />;
+  }
+  if (tech.includes("Go") || tech.includes("Golang")) {
+    return <FaGolang />;
+  }
+  if (tech.includes("Dart")) {
+    return <SiDart />;
+  }
+  if (tech.includes("HTML")) {
+    return <SiHtml5 />;
+  }
+  if (tech.includes("Zig")) {
+    return <SiZig />;
+  }
+  if (tech.includes("Nim")) {
+    return <FaCrown />;
+  }
+  if (tech.includes("Assembly")) {
+    return <SiAssemblyscript />;
+  }
+  return <BsFiles />;
+}
 
 export default function Projects() {
   const [filter, setFilter] = useState("all");
   const [project, setProject] = useState(true);
+
+  // Extract unique technologies from data
+  const uniqueTechs = useMemo(() => {
+    const techs = new Set();
+    datas.forEach(data => {
+      techs.add(data.technology);
+    });
+    return Array.from(techs).sort();
+  }, []);
+
   return (
     <motion.div
       className="h-full relative"
@@ -46,7 +96,7 @@ export default function Projects() {
             leave="transition ease-out duration-150"
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 -translate-y-1"
-            className="flex flex-col gap-4 overflow-hidden absolute md:static z-10 top-[6rem] md:top-0 py-2.5 md:py-0 px-4 md:px-0 w-full md:w-auto left-0 bg-[#011627] md:bg-transparent"
+            className="flex flex-col gap-4 overflow-y-auto overflow-x-hidden absolute md:static z-10 top-[6rem] md:top-0 py-2.5 md:py-0 px-4 md:px-0 w-full md:w-auto left-0 bg-[#011627] md:bg-transparent"
           >
             <div className="flex items-center gap-6 ">
               <button
@@ -59,73 +109,19 @@ export default function Projects() {
                 <span>All Projects</span>
               </button>
             </div>
-            <div className="flex items-center gap-6 ">
-              <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
-                  filter === "Python" ? "text-white" : "text-[#607B96]"
-                }`}
-                onClick={() => setFilter("Python")}
-              >
-                <SiPython />
-                <span>Python</span>
-              </button>
-            </div>
-            <div className="flex items-center gap-6">
-              <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
-                  filter === "C" ? "text-white" : "text-[#607B96]"
-                }`}
-                onClick={() => setFilter("C")}
-              >
-                <SiC />
-                <span>C</span>
-              </button>
-            </div>
-             <div className="flex items-center gap-6">
-              <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
-                  filter === "Zig" ? "text-white" : "text-[#607B96]"
-                }`}
-                onClick={() => setFilter("Zig")}
-              >
-                <SiZig />
-                <span>Zig</span>
-              </button>
-            </div>
-             <div className="flex items-center gap-6">
-              <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
-                  filter === "Nim" ? "text-white" : "text-[#607B96]"
-                }`}
-                onClick={() => setFilter("Nim")}
-              >
-                <FaCrown />
-                <span>Nim</span>
-              </button>
-            </div>
-             <div className="flex items-center gap-6">
-              <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
-                  filter === "Golang" ? "text-white" : "text-[#607B96]"
-                }`}
-                onClick={() => setFilter("Golang")}
-              >
-                <FaGolang />
-                <span>Golang</span>
-              </button>
-            </div>
-            <div className="flex items-center gap-6">
-              <button
-                className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
-                  filter === "Assembly" ? "text-white" : "text-[#607B96]"
-                }`}
-                onClick={() => setFilter("Assembly")}
-              >
-                <SiAssemblyscript />
-                <span>Assembly</span>
-              </button>
-            </div>
-
+            {uniqueTechs.map((tech) => (
+              <div key={tech} className="flex items-center gap-6">
+                <button
+                  className={`flex items-center gap-2.5 cursor-pointer transition-colors hover:text-white w-full ${
+                    filter === tech ? "text-white" : "text-[#607B96]"
+                  }`}
+                  onClick={() => setFilter(tech)}
+                >
+                  {generateIcon(tech)}
+                  <span>{tech}</span>
+                </button>
+              </div>
+            ))}
           </Transition>
         </div>
 
@@ -161,27 +157,6 @@ export default function Projects() {
 const Card = ({ data }) => {
   const technology = data.technology.split(/[, ]+/);
   const [isOpen, setIsOpen] = useState(false);
-
-  function generateIcon(value) {
-    if (value.includes("Python")) {
-      return <SiPython />;
-    }
-    if (value.includes("C")) {
-      return <SiC />;
-    }
-    if (value.includes("Golang")) {
-      return <FaGolang/>;
-    }
-    if (value.includes("Assembly")) {
-      return <SiAssemblyscript />;
-    }
-    if (value.includes("Zig")) {
-      return <SiZig />;
-    }
-    if (value.includes("Nim")) {
-      return <FaCrown />;
-    }
-  }
 
   return (
     <>

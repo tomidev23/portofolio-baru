@@ -1,66 +1,258 @@
 [
   {
-    "title": "Seraphine",
-    "description": "List of all reinforcement learning agents",
+    "title": "Portofolio Baru",
+    "description": "new porto like a Vim",
+    "technology": "JavaScript",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/portofolio-baru"
+  },
+  {
+    "title": "Monitoring_Air",
+    "description": null,
+    "technology": "C++",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/monitoring_air"
+  },
+  {
+    "title": "Praktikum",
+    "description": null,
     "technology": "Python",
-    "visibleProject": "Private",
-    "image": "../projects/seraphine.webp",
-    "link": "#wip"
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/praktikum"
   },
   {
-    "title": "Mary",
-    "description": "environment decision making in autonomous cars",
+    "title": "Be Umkmai",
+    "description": null,
+    "technology": "Go",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/BE-umkmai"
+  },
+  {
+    "title": "Tomidev23",
+    "description": null,
+    "technology": "Other",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/tomidev23"
+  },
+  {
+    "title": "Cobanuxt",
+    "description": null,
+    "technology": "Vue",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/cobanuxt"
+  },
+  {
+    "title": "Valentine Blug",
+    "description": null,
+    "technology": "JavaScript",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/valentine-blug"
+  },
+  {
+    "title": "Arch Hyprland",
+    "description": null,
+    "technology": "CSS",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/arch-hyprland"
+  },
+  {
+    "title": "Backendwithreactbun",
+    "description": null,
+    "technology": "TypeScript",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/backendwithreactBUN"
+  },
+  {
+    "title": "Pytonai_Praktikum",
+    "description": null,
     "technology": "Python",
-    "visibleProject": "Private",
-    "image": "../projects/mary.webp",
-    "link": "#wip"
-  },
-  {
-    "title": "Aiden",
-    "description": "Make Simple x86_64 emulator",
-    "technology": "C",
-    "visibleProject": "Private",
-    "image": "../projects/aiden.webp",
-    "link": "#wip"
-  },
-  {
-    "title": "Clara",
-    "description": "Development quantum computing package, currently working on it",
-    "technology": "C",
-    "visibleProject": "public",
-    "image": "../projects/clara.png",
-    "link": "https://github.com/slowy07/clara"
-  },
-  {
-    "title": "Jane (Joy Along New Experience)",
-    "description": "Develop new programming language focused for system programming",
-    "technology": "Golang",
     "visibleProject": "Public",
-    "image": "../projects/jane.png",
-    "link": "https://github.com/De-Rune/jane"
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/pytonai_praktikum"
   },
   {
-    "title": "Molly",
-    "description": "Develop program that focused transpile CPP code to ZIG code including bindings",
-    "technology": "Zig",
+    "title": "Webblug2021",
+    "description": null,
+    "technology": "CSS",
     "visibleProject": "Public",
-    "image": "../projects/molly.png",
-    "link": "https://github.com/slowy07/molly"
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/webBLUG2021"
   },
   {
-    "title": "Claire",
-    "description": "Develop library used for provided tensor type for deep learning, focus will be on BLAS and GPU support",
-    "technology": "Nim",
+    "title": "Jobnativephp",
+    "description": null,
+    "technology": "PHP",
     "visibleProject": "Public",
-    "image": "../projects/claire.png",
-    "link": "https://github.com/slowy07/claire"
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/jobNativePHP"
   },
   {
-    "title": "Haley",
-    "description": "Create x64 kernel written with assembly",
-    "technology": "Assembly",
+    "title": "Belajarasp",
+    "description": null,
+    "technology": "C#",
     "visibleProject": "Public",
-    "image": "../projects/haley.png",
-    "link": "https://github.com/slowy07/haley"
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/BelajarASP"
+  },
+  {
+    "title": "Management_Tugas",
+    "description": null,
+    "technology": "C++",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/management_tugas"
+  },
+  {
+    "title": "Masakmasak",
+    "description": null,
+    "technology": "Dart",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/masakmasak"
+  },
+  {
+    "title": "Tasknote",
+    "description": null,
+    "technology": "Dart",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/tasknote"
+  },
+  {
+    "title": "Kantong_Cerdas",
+    "description": null,
+    "technology": "Dart",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/kantong_cerdas"
+  },
+  {
+    "title": "Billings",
+    "description": null,
+    "technology": "Dart",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/billings"
+  },
+  {
+    "title": "Arsiptugas",
+    "description": null,
+    "technology": "C++",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/arsiptugas"
+  },
+  {
+    "title": "Tenangkampus",
+    "description": null,
+    "technology": "C++",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/TenangKampus"
+  },
+  {
+    "title": "Tpainaja",
+    "description": null,
+    "technology": "PHP",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/tpainaja"
+  },
+  {
+    "title": "Job Phpnative",
+    "description": null,
+    "technology": "PHP",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/job-phpnative"
+  },
+  {
+    "title": "Jokiannative",
+    "description": null,
+    "technology": "Other",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/jokiannative"
+  },
+  {
+    "title": "Praktikum Ppl",
+    "description": null,
+    "technology": "Blade",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/praktikum-ppl"
+  },
+  {
+    "title": "Belajar Lua",
+    "description": null,
+    "technology": "Shell",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/belajar-lua"
+  },
+  {
+    "title": "Apitpainaja",
+    "description": null,
+    "technology": "PHP",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/apitpainaja"
+  },
+  {
+    "title": "Tpa In",
+    "description": null,
+    "technology": "PHP",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/tpa-in"
+  },
+  {
+    "title": "Moblieapp Pbl308",
+    "description": null,
+    "technology": "Other",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/moblieAPP-PBL308"
+  },
+  {
+    "title": "Tugas Blug",
+    "description": null,
+    "technology": "HTML",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/Tugas-blug"
+  },
+  {
+    "title": "Biodata",
+    "description": null,
+    "technology": "C++",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/biodata"
+  },
+  {
+    "title": "Test",
+    "description": null,
+    "technology": "JavaScript",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/test"
+  },
+  {
+    "title": "Personal",
+    "description": null,
+    "technology": "HTML",
+    "visibleProject": "Public",
+    "image": "../projects/default.png",
+    "link": "https://github.com/tomidev23/Personal"
   }
 ]
