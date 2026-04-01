@@ -3,9 +3,9 @@ import { BsFiles } from "@react-icons/all-files/bs/BsFiles";
 import { GoTriangleDown } from "@react-icons/all-files/go/GoTriangleDown";
 import { SiPython } from "@react-icons/all-files/si/SiPython";
 import { SiC } from "@react-icons/all-files/si/SiC";
-import { SiZig, SiPhp, SiJavascript, SiCplusplus, SiGo, SiDart, SiHtml5 } from "react-icons/si";
+import { SiZig, SiPhp, SiJavascript, SiCplusplus, SiDart, SiHtml5, SiTypescript, SiVuedotjs, SiLaravel, SiGnubash } from "react-icons/si";
 import { FaCrown, FaGolang } from "react-icons/fa6";
-import { SiAssemblyscript, SiNim } from "react-icons/si";
+import { SiAssemblyscript } from "react-icons/si";
 import { motion } from "framer-motion";
 import { Fragment, useState, useMemo } from "react";
 import datas from "../data/ProjectData.json";
@@ -48,6 +48,18 @@ function generateIcon(tech) {
   if (tech.includes("Assembly")) {
     return <SiAssemblyscript />;
   }
+  if (tech.includes("TypeScript")) {
+    return <SiTypescript />;
+  }
+  if (tech.includes("Vue")) {
+    return <SiVuedotjs />;
+  }
+  if (tech.includes("Blade")) {
+    return <SiLaravel />;
+  }
+  if (tech.includes("Shell")) {
+    return <SiGnubash />;
+  }
   return <BsFiles />;
 }
 
@@ -82,7 +94,7 @@ export default function Projects() {
           <span>projects</span>
         </button>
         <div className="lg:col-span-10 md:col-span-9 col-span-full border-b border-[#1E2D3D] flex items-center justify-center text-white row-start-1 md:row-start-auto py-2.5 lg-py-0">
-          {filter} projects
+          {filter === "all" ? `${datas.length} total projects` : `${datas.filter((p) => p.technology === filter).length} ${filter} projects`}
         </div>
       </div>
 
