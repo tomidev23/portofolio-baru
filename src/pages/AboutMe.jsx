@@ -91,7 +91,7 @@ function MyBio({ closeBio }) {
           {`name: str = "tomi" # IGNORE, just a nickname that i use in online platform, you can call me tomi
 hobbies: list = [
   "Coding",
-  "Dota",
+  "Tidur",
   "Film",
 ]
 
