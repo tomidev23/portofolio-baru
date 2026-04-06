@@ -88,7 +88,7 @@ function MyBio({ closeBio }) {
           style={atomOneDark}
           showLineNumbers
         >
-          {`name: str = "tomi" # IGNORE, just a nickname that i use in online platform, you can call me tomi
+          {`name: str = "modomKuy" # IGNORE, just a nickname that i use in online platform, you can call me tomi
 hobbies: list = [
   "Coding",
   "Tidur",
@@ -108,12 +108,6 @@ languages: list = [
 currently_learning: dict = {
   "programming language": "nim",
   "other": ["quantum computing", "geospaital information system (GIS)"],
-}
-
-other: dict {
-  "youtube": "youtube.com/@tomi",
-  "github": "tomidev23",
-  "wakatime": "@Tomidev23"
 }
 
 class Volunteering:
@@ -188,19 +182,65 @@ function Work({ closeWork }) {
           style={atomOneDark}
           showLineNumbers
         >
-          {`# work experience
-def Google(start_year: int, role: str, end_year: int) -> str:
-    return (
-        f"start from {start_year} as {role} on google Brain, specially magenta, Tensorflow. "
-        + f" in {end_year}, i made the difficult decision to leave Google and take a break "
-        + "from the tech industry altogether. while I valued my time at Google and the "
-        + "opportunities it provided, I recognized the importance of maintaining a healthy "
-        + "work-life balance and taking time to recharge"
-    )
+          {`# My professional journey in software engineering and technology innovation.
+    def student_role() -> str:
+      return (
+        "Studying Software Engineering at Politeknik Negeri Batam with a focus on "
+        "algorithm design, web development, and software development. "
+        "Actively involved in academic projects and extracurricular activities to "
+        "improve practical knowledge and teamwork skills."
+      )
 
-print(Google(2021, "software engineer", 2023))
+    def 
+    chairman_blug() -> str:
+      return (
+        "Leading Batam Linux User Group as chairman by overseeing community engagement, "
+        "event organization, and open-source adoption advocacy. "
+        "Initiated programs to promote Linux usage and education in Batam, encouraged "
+        "collaboration among members, and represented the community in regional and national "
+        "technology forums."
+      )
 
-`}
+    def programming_staff_blug() -> str:
+      return (
+        "Responsible for developing and maintaining the Batam Linux User Group website. "
+        "Managed content, updated event information, and ensured technical website "
+        "functionality to provide an optimal user experience for community members and visitors."
+      )
+
+    def Network Technician() -> str:
+      return (
+        "Worked as a Network Technician at PT. Toba Jaya net, responsible for "
+        "installing, configuring, and maintaining network infrastructure. "
+        "Provided technical support to ensure network reliability and security, and "
+        "collaborated with the IT team to implement network solutions that meet organizational needs."
+      )
+    print("2024 - Present")
+    print("Student")
+    print("Politeknik Negeri Batam")
+    print(student_role())
+    print("Software Engineering · Algorithm Design · Web Development · Teamwork · Project Management")
+    print()
+
+    print("Jan 2026 - Present")
+    print("Chairman of Batam Linux User Group")
+    print("Batam Linux User Group")
+    print(chairman_blug())
+    print("Community Leadership · Event Management · Open Source Advocacy · Collaboration · Public Speaking")
+    print()
+
+    print("Jan 2025 - Jan 2026")
+    print("Programming Staff of Batam Linux User Group")
+    print("Batam Linux User Group")
+    print(programming_staff_blug())
+    print("Web Development · Content Management · Website Maintenance · Collaboration · Public Speaking")
+
+    print("Apr 2023 - Dec 2023")
+    print("Network Technician")
+    print("PT. Toba Jaya Net")
+    print(Network_Technician())
+    print("Network Installation · Configuration · Maintenance · Technical Support · Collaboration")
+            `}
         </SyntaxHighlighter>
       </div>
     </motion.div>

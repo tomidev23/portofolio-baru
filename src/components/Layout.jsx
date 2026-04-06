@@ -90,6 +90,19 @@ export default function Layout({ children, setIsNavbar, isNavbar }) {
 
               <button
                 id="border-b"
+                className={`px-5 py-4 border-l border-l-[#101419] border-b-2 h-full transition-all hover:text-white ${isNavbar === "certificate"
+                    ? "border-b-2 border-[#FEA55F] text-white"
+                    : "border-b-transparent"
+                  }`}
+                onClick={() => {
+                  setIsNavbar("certificate");
+                }}
+              >
+                _certificate
+              </button>
+
+              <button
+                id="border-b"
                 className={`px-5 py-4 border-l border-l-[#101419] border-b-2 h-full transition-all hover:text-white ${isNavbar === "contact-me"
                     ? "border-b-2 border-[#FEA55F] text-white"
                     : "border-b-transparent"

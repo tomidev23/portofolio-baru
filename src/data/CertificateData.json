@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Best BPH 2025",
+    "issuer": "Batam Linux User Group",
+    "date": "December 2025",
+    "visibleProject": "Public",
+    "image": "../certificate/sertifikat1.png"
+  },
+  {
+    "title": "Speaker BnB Batam Linux User Group 2025",
+    "issuer": "Batam Linux User Group",
+    "date": "August 2025",
+    "visibleProject": "Public",
+    "image": "../certificate/sertifikat2.png"
+  },
+  {
+    "title": "1 Period with Batam Linux User Group 2025",
+    "issuer": "Batam Linux User Group",
+    "date": "December 2025",
+    "visibleProject": "Public",
+    "image": "../certificate/sertifikat3.png"
+  },
+  {
+    "title": "Certificate of Completion",
+    "issuer": "Batam State Polytechnic",
+    "date": "TA 2024/2025 Odd Semester",
+    "visibleProject": "Public",
+    "image": "../certificate/sertifikat4.png"
+  },
+  {
+    "title": "Certificate of Completion",
+    "issuer": "Batam State Polytechnic",
+    "date": "TA 2024/2025 Even Semester",
+    "visibleProject": "Public",
+    "image": "../certificate/sertifikat5.png"
+  },
+  {
+    "title": "Certificate of Completion",
+    "issuer": "Batam State Polytechnic",
+    "date": "TA 2025/2026 Odd Semester",
+    "visibleProject": "Public",
+    "image": "../certificate/sertifikat6.png"
+  }
+]

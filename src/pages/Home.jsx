@@ -15,7 +15,7 @@ export default function Home() {
           <div className="mb-20">
             <p className="text-white text-lg">Wello, i am</p>
             <h1 className="text-white lg:text-6xl md:text-5xl text-5xl">
-              tomi
+              Tomingse Lingga
             </h1>
 
             <h2 className=" text-[#E99287] lg:text-3xl md:text-2xl text-xl flex items-center gap-3">
