@@ -172,7 +172,7 @@ function Work({ closeWork }) {
             >
               <AiOutlineClose />
             </button>
-            <p className="pr-5 truncate">work.py</p>
+            <p className="pr-5 truncate">experience.py</p>
           </div>
         </div>
       </div>
@@ -407,7 +407,7 @@ function PersonalInfo({ setRender, render }) {
                       onClick={() => setRender("work")}
                     >
                       <IoLogoPython />
-                      <span className="truncate">work.py</span>
+                      <span className="truncate">experience.py</span>
                     </Popover.Panel>
                     <Popover.Panel
                       className={`px-4 my-1 ml-2.5 inline-flex items-center gap-2.5 transition-colors ${render === "gear" ? "text-white" : "text-[#607B96]"
